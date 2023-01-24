@@ -1,0 +1,13 @@
+{
+    "server": {
+      "baseDir": "./dist/frontend",
+      "index": "index.html",
+      "headers": {
+        "Content-Security-Policy": "default-src 'self' style-src 'self' 'unsafe-inline'; media-src *; script-src 'sha256-V+/U3qbjHKP0SaNQhMwYNm62gfWX4QHwPJ7We1PXokI='"
+      }
+    },
+    "browser": null,
+    "ui": false,
+    "notify": false,
+    "port": 80
+}

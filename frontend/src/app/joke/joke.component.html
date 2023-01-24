@@ -1,0 +1,11 @@
+<div class="site-wrapper">
+    <div class="humor-wrapper" *ngFor="let jok of this.joke">
+      <h2>{{jok.header}}</h2>
+      <h3>{{jok.joke}}</h3>
+      <p class="answer" (click)="showAnswer()" [class.active]="clicked">{{jok.answer}}</p>
+      <h4 style="text-align: right;">- {{jok.author}}, {{jok.year}}</h4>
+      <div class="button-wrapper nomargin">
+        <button (click)="getJoke()" class="btn">New joke</button>
+      </div>
+    </div>
+</div>
